@@ -7,6 +7,15 @@ from nerf.utils import *
 
 # torch.autograd.set_detect_anomaly(True)
 
+
+#test.py -O --torso \
+#    --pose data/pose.json \
+#    --data_range {Pose_start} {Pose_end} \
+#    --ckpt pretrained/model.pth \
+#    --aud data/{Aud[:-4]}_eo.npy \
+#    --bg_img data/{BG} \
+#    --workspace trial
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
