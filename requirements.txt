@@ -1,7 +1,3 @@
-tensorflow
-Keras
-opencv-python-headless
-numpy
 streamlit
 
 torch-ema
