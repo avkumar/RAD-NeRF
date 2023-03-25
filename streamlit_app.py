@@ -5,9 +5,13 @@ import cv2
 from keras.models import load_model
 #import joblib
 from keras.preprocessing import image
-from io import BytesIO
-from tensorflow.keras.applications import resnet50
 
+
+
+import os 
+os.system('python test.py -O --torso --pose data/pose.json --data_range {Pose_start} {Pose_end}  --ckpt pretrained/model.pth --aud data/{Aud[:-4]}_eo.npy --bg_img data/{BG} --workspace trial')
+
+"""
 streamlit run test.py -O --torso \
     --pose data/pose.json \
     --data_range {Pose_start} {Pose_end} \
@@ -15,6 +19,7 @@ streamlit run test.py -O --torso \
     --aud data/{Aud[:-4]}_eo.npy \
     --bg_img data/{BG} \
     --workspace trial
+"""   
 
 streamlit run display.py
 
