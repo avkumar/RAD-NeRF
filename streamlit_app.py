@@ -8,8 +8,8 @@ from keras.preprocessing import image
 
 
 
-import os 
-os.system('python test.py -O --torso --pose data/pose.json --data_range {Pose_start} {Pose_end}  --ckpt pretrained/model.pth --aud data/{Aud[:-4]}_eo.npy --bg_img data/{BG} --workspace trial')
+#import os 
+#os.system('python test.py -O --torso --pose data/pose.json --data_range {Pose_start} {Pose_end}  --ckpt pretrained/model.pth --aud data/{Aud[:-4]}_eo.npy --bg_img data/{BG} --workspace trial')
 
 """
 streamlit run test.py -O --torso \
