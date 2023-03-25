@@ -8,7 +8,13 @@ from keras.preprocessing import image
 from io import BytesIO
 from tensorflow.keras.applications import resnet50
 
-
+streamlit run test.py -O --torso \
+    --pose data/pose.json \
+    --data_range {Pose_start} {Pose_end} \
+    --ckpt pretrained/model.pth \
+    --aud data/{Aud[:-4]}_eo.npy \
+    --bg_img data/{BG} \
+    --workspace trial
 
 #Loading the Model
 model = load_model('object_classifier.h5', compile=False)
