@@ -16,6 +16,8 @@ streamlit run test.py -O --torso \
     --bg_img data/{BG} \
     --workspace trial
 
+streamlit run display.py
+
 #Loading the Model
 model = load_model('object_classifier.h5', compile=False)
 
